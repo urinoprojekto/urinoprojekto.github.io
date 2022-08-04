@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html style="visibility: hidden;">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta http-equiv="x-ua-compatible" content="ie=edge" />
+		<title>Projekto "Urino"</title>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@voerro/calamansi-js@1.0.0/dist/calamansi.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+		<link rel="stylesheet" href="/font/stylesheet.css" type="text/css">
+		<link rel="stylesheet" href="/font/cool/stylesheet.css" type="text/css">
+		<link rel="stylesheet" href="/css/style.css" type="text/css">
+		<link rel="stylesheet" href="/css/fontello-embedded.css" type="text/css">
+		<link rel="icon" href="favicon.svg" type="image/svg">
+	</head>
+	<body>
+		<header>
+			<nav class="navbar navbar-dark navbar-expand-lg" style="background-color: #181612">
+				<div class="container-fluid">
+					<a class="ms-3 navbar-brand fs-1" href="#"><img src="/img/logotipoj/logo.svg" height=72 class="me-2 logo"></a>
+					<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Baskuli navigacion">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse" id="navbarSupportedContent">
+						<ul class="navbar-nav w-100 mb-2 mb-lg-0">
+							<li class="nav-item dropdown">
+								<a title="{{_music}}" class="nav-link text-light fs-5" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">{{_music}}</a>
+								<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+									<li><span class="dropdown-item-text"><h5><b>{{_albums}}</b></h5></span></li>
+									<li><a class="dropdown-item" href="#">Album 1</a></li>
+									<li><a class="dropdown-item" href="#">Album 2</a></li>
+									<li><hr class="dropdown-divider"></li>
+									<li><span class="dropdown-item-text"><h5><b>{{_unofficial}}</b></h5></span></li>
+									<li><a class="dropdown-item" href="#">LP 1</a></li>
+								</ul>
+							</li>
+							<li class="nav-item dropdown">
+								<a title="{{_lyrics}}" class="nav-link text-light fs-5" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+									{{_lyrics}}
+								</a>
+								
+							</li>
+							<li class="nav-item dropdown ms-0 ms-lg-auto">
+								<a title="{{_lang}}" class="nav-link text-light fs-5" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+									<span class="d-none d-lg-inline">{{_lang}}</span><i class="icon-globe-1"></i><span class="d-lg-none d-inline">{{_lang}}</span>
+								</a>							
+								<ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+									<li><a class="dropdown-item lang" value="eo" href="#"><img src="/img/lingvoj/eo.png"> Esperanto</a></li>
+									<li><a class="dropdown-item lang" value="en" href="#"><img src="/img/lingvoj/angla.png"> English</a></li>
+									<li><a class="dropdown-item lang" value="de" href="#"><img src="/img/lingvoj/germana.png"> Deutsch</a></li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</header>
+		<div class="container-fluid mt-5">
+			<h1 class="display-1 text-light text-center mb-4">{{_newest}}</h1>
+			<div class="container rounded p-3 mx-auto">
+				<span class="calamansi">Aidosurinapopleksio</span>
+				<!--<img src="https://dummyimage.com/640x640/cfcfcf/000000&text=ALBUMA+KOVRILAĈO">-->
+			</div>
+		</div>
+		<footer class="d-flex flex-wrap justify-content-between align-items-center p-4 pb-5 mt-4" style="background-color: #181612">
+			<p class="col-md-4 mb-0 text-light"><img width=16 title="Copyleft" src="/img/copyleft.svg"> 2022 PROJEKTO "URINO"</p>
+			<a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto text-decoration-none">
+				<img src="/img/logotipoj/logo.svg" height=64>
+			</a>
+			<ul class="nav col-md-4 justify-content-end">
+				<li class="nav-item"><a href="#" class="nav-link px-2 text-light">{{_support}}</a></li>
+				<li class="nav-item"><a href="#" class="nav-link px-2 text-light">{{_lyrics}}</a></li>
+				<li class="nav-item"><a href="#" class="nav-link px-2 text-light">{{_about}}</a></li>
+			</ul>
+		</footer>
+		<script	src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+		<script src="https://unpkg.com/@tolgee/core/dist/tolgee.umd.js"></script>
+		<script src="https://unpkg.com/@tolgee/ui/dist/tolgee-ui.umd.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/@voerro/calamansi-js@1.0.0/dist/calamansi.min.js"></script>
+		<script src="js/index.js"></script>
+	</body>
+</html>
